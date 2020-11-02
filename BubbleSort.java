@@ -1,9 +1,10 @@
 /*
- * Programmer:
- * Date:
- * Purpose:
+ * Programmer: Jordan Nicholson
+ * Date: November 2, 2020
+ * Purpose: To bubble sort an array and print the array after each pass.
  */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class BubbleSort {
@@ -22,11 +23,32 @@ public class BubbleSort {
             numbers[index] = input.nextInt();
         }
 
-        // TODO: Sort the array using Bubble Sort
+        //Sort the array using Bubble Sort ****** err
+        int temp = 0;
+        for (int index = 0; index < size; index++) {
+        	
+        	System.out.print("Before pass " + (index + 1) + ": \n");
+        	System.out.println(Arrays.toString(numbers));
+        	
+        	for (int secondIndex = 1; secondIndex < size; secondIndex++) {
+        		//if this if loop runs, boolean returns true, and break	
+        		if (numbers[secondIndex - 1] > numbers[secondIndex]) {
+        			
+        			temp = numbers[secondIndex - 1];
+        			numbers[secondIndex - 1] = numbers[secondIndex];
+        			numbers[secondIndex] = temp;
+   
+        		}
+        		
+        	}
+        	
+        }
         
 
-        // Print out the sorted array
-        System.err.println("Sorted Array:");
+        // Print out the sorted array***** err
+        System.out.println("Sorted Array:");
         System.out.println(Arrays.toString(numbers));
-    }
+		
+	}
 }
+
