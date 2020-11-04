@@ -23,11 +23,11 @@ public class BubbleSort {
 			numbers[index] = input.nextInt();
 		}
 
-		//Sort the array using Bubble Sort ****** err
+		//Sort the array using Bubble Sort
 		int temp = 0;
 		for (int index = 0; index < size; index++) {
 
-			System.out.print("Before pass " + (index + 1) + ": \n");
+			System.err.print("Before pass " + (index + 1) + ": \n");
 			System.out.println(Arrays.toString(numbers));
 
 			for (int secondIndex = 1; secondIndex < size; secondIndex++) {
@@ -46,8 +46,8 @@ public class BubbleSort {
 		}
 
 
-		// Print out the sorted array***** err
-		System.out.println("Sorted Array:");
+		// Print out the sorted array
+		System.err.println("Sorted Array:");
 		System.out.println(Arrays.toString(numbers));
 
 	}
