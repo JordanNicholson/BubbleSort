@@ -71,22 +71,21 @@ public class BubbleSort {
 
 		//Print messages to the error stream
 		int temp = 0;
-		for (int index = 0; index < size; index++) {
+		for (int index = 0; index < size - 1; index++) {
 
 			System.err.print("Before pass " + (index + 1) + ": \n");
 			System.out.println(Arrays.toString(numbers));
-
 
 			for (int secondIndex = 1; secondIndex < size; secondIndex++) {
 
 				//Sort the array using Bubble Sort 
 				if (numbers[secondIndex - 1] > numbers[secondIndex]) {
-
+					
 					temp = numbers[secondIndex - 1];
 					numbers[secondIndex - 1] = numbers[secondIndex];
 					numbers[secondIndex] = temp;
 				}
-
+	
 			}
 		}
 
