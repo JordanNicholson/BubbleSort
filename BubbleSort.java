@@ -9,51 +9,7 @@ import java.util.Scanner;
 
 public class BubbleSort {
 	public static void main (String [] args) {
-		/*
 
-		//Sort the array using Bubble Sort
-		int temp = 0;
-		for (int index = 0; index < size; index++) {
-
-			System.out.print("Before pass " + (index + 1) + ": \n");
-			System.out.println(Arrays.toString(numbers));
-		}
-
-		boolean swapped;
-
-		for (int i = 0; i < size; i++) {
-			for (int j = i + 1; j < size; j++) {
-
-			if(numbers[i] > numbers[j]) {
-				swapped = true;
-				temp = numbers[i - 1];
-				numbers[i - 1] = numbers[i];
-				numbers[i] = temp;
-			}
-			else {
-				swapped = false;
-			}
-
-				if (swapped == false) {
-					break;
-				}
-
-
-		}
-		}
-
-
-//if this if loop runs, boolean returns true, and break	
-				//boolean condition = 
-
-
-		// Print out the sorted array
-		System.out.println("Sorted Array:");
-		System.out.println(Arrays.toString(numbers));
-
-	}
-}
-		 */
 
 		// Create the input scanner
 		Scanner input = new Scanner(System.in);
@@ -80,12 +36,12 @@ public class BubbleSort {
 
 				//Sort the array using Bubble Sort 
 				if (numbers[secondIndex - 1] > numbers[secondIndex]) {
-					
+
 					temp = numbers[secondIndex - 1];
 					numbers[secondIndex - 1] = numbers[secondIndex];
 					numbers[secondIndex] = temp;
 				}
-	
+
 			}
 		}
 
